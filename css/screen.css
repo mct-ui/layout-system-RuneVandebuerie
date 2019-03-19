@@ -208,7 +208,7 @@ a:focus {
 /* reverse horizontal row modifier */
 
 .o-layout--row-reverse {
-  flex-direction: row-reverse;
+  flex-direction: reverse;
 }
 
 /* Horizontal alignment modifiers*/
@@ -235,25 +235,47 @@ a:focus {
 
 /* Vertical item alignment modifiers */
 
-.o-layout--align-start {}
+.o-layout--align-start {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
 
-.o-layout--align-end {}
+.o-layout--align-end {
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
 
-.o-layout--align-center {}
+.o-layout--align-center {
+  -ms-align-items: center;
+  align-items: center;
+}
 
-.o-layout--align-baseline {}
+.o-layout--align-baseline {
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
 
 /* Vertical content alignment modifiers. Only work if there is one than one flex item */
 
-.o-layout--align-content-start {}
+.o-layout--align-content-start {
+  align-content: flex-start;
+}
 
-.o-layout--align-content-end {}
+.o-layout--align-content-end {
+  align-content: flex-end;
+}
 
-.o-layout--align-content-center {}
+.o-layout--align-content-center {
+  align-content: center;
+}
 
-.o-layout--align-content-space-around {}
+.o-layout--align-content-space-around {
+  align-content: space-around;
+}
 
-.o-layout--align-content-space-between {}
+.o-layout--align-content-space-between {
+  align-content: space-between;
+}
 
     Objects: Row
     ---
